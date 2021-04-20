@@ -44,7 +44,7 @@ passport.use(new JWTstrategy({
 }, async (token, done) => {
   try {
     //  Pass the user details to the next middleware
-    return done(null, { ...token.user, tokenExp: token.exp });
+    return done(null, { ...token.usuario, tokenExp: token.exp });
   } catch (error) {
     return done(error);
   }

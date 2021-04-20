@@ -56,6 +56,12 @@ const Usuario = db.define('Usuario', {
     activo:{
         type: Sequelize.BOOLEAN,
         defaultValue: true,
+    },
+    passwordResetToken:{
+        type: Sequelize.STRING,
+    },
+    passwordResetExpire:{
+        type: Sequelize.DATE,
     }
 });
 

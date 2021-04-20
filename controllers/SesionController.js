@@ -17,7 +17,7 @@ const renderToken = (usuario) => {
   // enviar el token al cliente, junto con los datos del usuario
   return {
     usuario: {
-      id, nombre, apellidos, email, rol,
+      id, nombre, apellidos, email,
     },
     token,
   };
